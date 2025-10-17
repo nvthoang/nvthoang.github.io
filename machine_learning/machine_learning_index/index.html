@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://yourdomain.com/machine_learning/machine_learning_index/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Machine Learning - Hoang Nguyen's Website</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Hoang Nguyen's Website</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../about_me/" class="nav-link">About Me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../publications/" class="nav-link">Publications</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../experience/" class="nav-link">Experience</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Play with Data</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../data_analysis/data_analysis_index/" class="dropdown-item">Data Analysis</a>
+</li>
+                                    
+<li>
+    <a href="../../data_mining/data_mining_index/" class="dropdown-item">Data Mining</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Machine Learning</a>
+</li>
+                                    
+<li>
+    <a href="../../deep_learning/deep_learning_index/" class="dropdown-item">Deep Learning</a>
+</li>
+                                    
+<li>
+    <a href="../../network_analysis/network_analysis_index/" class="dropdown-item">Network Analysis</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Computational Science</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../mol_sci/mol_sci_index.md" class="dropdown-item">Molecular Science</a>
+</li>
+                                    
+<li>
+    <a href="../../life_sci/life_sci_index.md" class="dropdown-item">Life Science</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../../data_mining/data_mining_index/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../../deep_learning/deep_learning_index/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#machine-learning" class="nav-link">Machine Learning</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#for-you" class="nav-link">For You</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#what-you-need" class="nav-link">What You Need</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#what-to-expect" class="nav-link">What to Expect</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#lets-play" class="nav-link">Let's Play</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="machine-learning">Machine Learning</h1>
+<h2 id="for-you">For You</h2>
+<p>Hey! I hope you enjoy applying machine learning algorithms and techniques to build predictive models and solve real-world problems. I write these blogs as a guideline for beginners as well as for myself to recall knowledge. If you're an expert, these blogs may not be for you.</p>
+<h2 id="what-you-need">What You Need</h2>
+<p>When I write my blogs, I assume that you have basic statistics knowledge and Python programming skills. You may need to download and install <a href="https://www.anaconda.com/download">Anaconda</a> (which includes Jupyter Notebook) or use <a href="https://colab.research.google.com/">Google Colab</a> for cloud-based analysis.</p>
+<h2 id="what-to-expect">What to Expect</h2>
+<p>The blogs contain as little theory as possible with plain and simple explanations to get you straight to the point. You are expected to know how to code and interpret results after each topic.</p>
+<h2 id="lets-play">Let's Play</h2>
+<h3 id="1-supervised-learning">1. Supervised Learning</h3>
+<h4 id="tree-based-methods">Tree-Based Methods</h4>
+<ol>
+<li><a href="../data_mining/classification_analysis/decision_trees.md">Decision Trees</a></li>
+<li><a href="../data_mining/classification_analysis/random_forest_classification.md">Random Forest</a></li>
+<li><a href="./supervised_learning/adaboost.md">Boosting (AdaBoost)</a></li>
+<li><a href="./supervised_learning/gradient_boosting.md">Gradient Boosting</a></li>
+<li><a href="./supervised_learning/xgboost.md">Extreme Gradient Boosting (XGBoost)</a></li>
+</ol>
+<h4 id="instance-based-methods">Instance-Based Methods</h4>
+<ol>
+<li><a href="../data_mining/classification_analysis/knn_classification.md">K-Nearest Neighbors (KNN)</a></li>
+<li><a href="./supervised_learning/naive_bayes.md">Naive Bayes</a></li>
+</ol>
+<h4 id="distance-based-methods">Distance-Based Methods</h4>
+<ol>
+<li><a href="../data_mining/classification_analysis/svm_classification.md">Support Vector Machine (SVM)</a></li>
+<li><a href="../data_mining/regression_analysis/support_vector_regression.md">Support Vector Regression (SVR)</a></li>
+</ol>
+<h3 id="2-unsupervised-learning">2. Unsupervised Learning</h3>
+<h4 id="clustering-algorithms">Clustering Algorithms</h4>
+<ol>
+<li><a href="../data_mining/dimensionality_clustering/kmeans_clustering.md">K-Means Clustering</a></li>
+<li><a href="../data_mining/dimensionality_clustering/hierarchical_clustering.md">Hierarchical Clustering</a></li>
+<li><a href="../data_mining/dimensionality_clustering/dbscan_clustering.md">DBSCAN Clustering</a></li>
+<li><a href="./unsupervised_learning/gaussian_mixture_models.md">Gaussian Mixture Models (GMM)</a></li>
+</ol>
+<h4 id="dimensionality-reduction">Dimensionality Reduction</h4>
+<ol>
+<li><a href="../data_mining/dimensionality_clustering/pca.md">Principal Component Analysis (PCA)</a></li>
+<li><a href="../data_mining/dimensionality_clustering/lda.md">Linear Discriminant Analysis (LDA)</a></li>
+<li><a href="../data_mining/dimensionality_clustering/tsne.md">t-SNE</a></li>
+<li><a href="./unsupervised_learning/umap.md">UMAP</a></li>
+</ol>
+<h3 id="3-model-evaluation-and-selection">3. Model Evaluation and Selection</h3>
+<h4 id="feature-engineering">Feature Engineering</h4>
+<ol>
+<li><a href="./advanced_ml/feature_scaling.md">Feature Scaling</a></li>
+<li><a href="./advanced_ml/feature_encoding.md">Feature Encoding</a></li>
+<li><a href="./advanced_ml/feature_creation.md">Feature Creation</a></li>
+</ol>
+<h4 id="model-validation">Model Validation</h4>
+<ol>
+<li><a href="./model_evaluation/train_test_split.md">Train-Test Split</a></li>
+<li><a href="./model_evaluation/cross_validation.md">Cross-Validation</a></li>
+<li><a href="./model_evaluation/bootstrap_sampling.md">Bootstrap Sampling</a></li>
+</ol>
+<h4 id="performance-metrics">Performance Metrics</h4>
+<ol>
+<li><a href="./model_evaluation/regression_metrics.md">Regression Metrics</a></li>
+<li><a href="./model_evaluation/classification_metrics.md">Classification Metrics</a></li>
+<li><a href="./model_evaluation/confusion_matrix.md">Confusion Matrix</a></li>
+<li><a href="./model_evaluation/roc_auc.md">ROC Curve and AUC</a></li>
+</ol>
+<h4 id="model-optimization">Model Optimization</h4>
+<ol>
+<li><a href="./model_evaluation/hyperparameter_tuning.md">Hyperparameter Tuning</a></li>
+<li><a href="./model_evaluation/grid_search.md">Grid Search</a></li>
+<li><a href="./model_evaluation/random_search.md">Random Search</a></li>
+<li><a href="./model_evaluation/feature_selection.md">Feature Selection</a></li>
+</ol>
+<h3 id="4-specialized-topics">4. Specialized Topics</h3>
+<h4 id="neural-networks">Neural Networks</h4>
+<ol>
+<li><a href="./advanced_ml/perceptron.md">Perceptron</a></li>
+<li><a href="./advanced_ml/mlp.md">Multi-Layer Perceptron (MLP)</a></li>
+<li><a href="./advanced_ml/backpropagation.md">Backpropagation</a></li>
+</ol>
+<h4 id="time-series-forecasting">Time Series Forecasting</h4>
+<ol>
+<li><a href="./specialized_topics/time_series_preprocessing.md">Time Series Preprocessing</a></li>
+<li><a href="./specialized_topics/arima_models.md">Autoregressive Integrated Moving Average (ARIMA) Models</a></li>
+<li><a href="./specialized_topics/ml_time_series.md">Machine Learning for Time Series</a></li>
+</ol>
+<h4 id="ensemble-learning-strategy">Ensemble Learning Strategy</h4>
+<ol>
+<li><a href="./specialized_topics/bagging_strategy.md">Bagging</a></li>
+<li><a href="./specialized_topics/boosting_strategy.md">Boosting</a></li>
+<li><a href="./specialized_topics/stacking.md">Stacking</a></li>
+<li><a href="./specialized_topics/voting_classifiers.md">Voting Classifiers</a></li>
+<li><a href="./specialized_topics/blending.md">Blending</a></li>
+</ol></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

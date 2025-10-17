@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://yourdomain.com/data_analysis/simple_linear_reg/simple_linear_reg/">
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Simple Linear Regression - Hoang Nguyen's Website</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../../css/brands.min.css" rel="stylesheet">
+        <link href="../../../css/solid.min.css" rel="stylesheet">
+        <link href="../../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">Hoang Nguyen's Website</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../../about_me/" class="nav-link">About Me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../../publications/" class="nav-link">Publications</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../../../experience/" class="nav-link">Experience</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Play with Data</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../data_analysis_index/" class="dropdown-item">Data Analysis</a>
+</li>
+                                    
+<li>
+    <a href="../../../data_mining/data_mining_index/" class="dropdown-item">Data Mining</a>
+</li>
+                                    
+<li>
+    <a href="../../../machine_learning/machine_learning_index/" class="dropdown-item">Machine Learning</a>
+</li>
+                                    
+<li>
+    <a href="../../../deep_learning/deep_learning_index/" class="dropdown-item">Deep Learning</a>
+</li>
+                                    
+<li>
+    <a href="../../../network_analysis/network_analysis_index/" class="dropdown-item">Network Analysis</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Computational Science</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../mol_sci/mol_sci_index.md" class="dropdown-item">Molecular Science</a>
+</li>
+                                    
+<li>
+    <a href="../../../life_sci/life_sci_index.md" class="dropdown-item">Life Science</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#simple-linear-regression" class="nav-link">Simple Linear Regression</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#purpose" class="nav-link">Purpose</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#visualization" class="nav-link">Visualization</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#hypothesis-testing" class="nav-link">Hypothesis testing</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="simple-linear-regression">Simple Linear Regression</h1>
+<h2 id="purpose">Purpose</h2>
+<p>If you want to apply simple linear regression to analyze the relationship between two variables: a <code>predictor</code> variable (<code>x</code>) and a <code>response</code> variable (<code>y</code>), this post is for you.</p>
+<h2 id="visualization">Visualization</h2>
+<h3 id="1-simple-visualization">1. Simple visualization</h3>
+<p>Visualize relationship between Women Height (<code>women$height</code>) and Women Weight (<code>women$weight</code>)</p>
+<pre><code class="language-r">#svg(&quot;women_plot.svg&quot;, width = 6, height = 6) #set up figure's size
+
+plot(women$height, women$weight,
+     main = &quot;Height vs Weight for American Women&quot;,
+     xlab = &quot;Height (inches)&quot;, # y-axis label
+     ylab = &quot;Weight (pounds)&quot;, # y-axis label
+     pch = 16, # point size
+     col = &quot;blue&quot;) # color
+
+abline(lm(weight ~ height, data = women), col = &quot;red&quot;, lwd = 2) # red regression line
+
+#dev.off() #export
+</code></pre>
+<p><strong>Note</strong>: In R, <code>$</code> means <code>of dataframe</code>. <code>women$height</code> means taking <code>height</code> variable (column) from dataframe <code>women</code>.</p>
+<p>Here what you'll get</p>
+<p><img alt="alt text" src="../reg_abline.svg" /></p>
+<h3 id="2-visualization-with-ggplot2-library">2. Visualization with <code>ggplot2</code> library</h3>
+<p>Visualize relationship between Women Height (<code>women$height</code>) and Women Weight (<code>women$weight</code>)</p>
+<pre><code class="language-r">library(ggplot2)
+
+# Create the plot
+p &lt;- ggplot(women, aes(x = height, y = weight)) +
+  geom_point(color = &quot;blue&quot;, size = 1) +                    # blue points (pch = 16 equivalent)
+  geom_smooth(method = &quot;lm&quot;, color = &quot;red&quot;, se = FALSE, linewidth = 1) + # red regression line
+  labs(title = &quot;Height vs Weight for American Women&quot;,       # main title
+       x = &quot;Height (inches)&quot;,                               # x-axis label
+       y = &quot;Weight (pounds)&quot;) +                             # y-axis label
+  theme_minimal()
+
+#ggsave(&quot;women_plot.svg&quot;, plot = p, width = 4.5, height = 4.5, units = &quot;in&quot;, device = &quot;svg&quot;) # Export as SVG
+</code></pre>
+<p>Here what you'll get</p>
+<p><img alt="alt text" src="../reg_abline_ggplot2.svg" /></p>
+<h2 id="hypothesis-testing">Hypothesis testing</h2>
+<h3 id="1-test-of-signficance">1. Test of signficance</h3>
+<p>use <code>cor.test()</code> function to test the signicance of hypothesis.</p>
+<pre><code class="language-r">cor.test(women$height, women$weight)
+</code></pre>
+<p><strong>Note</strong>: Linear regression assumes a linear relationship between variables. We should verify both that the variables are correlated and that their relationship is indeed linear.</p>
+<p>Here are results from the script above:</p>
+<pre><code>Pearson's product-moment correlation
+
+data:  women$height and women$weight
+t = 37.855, df = 13, p-value = 1.091e-14
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ 0.9860970 0.9985447
+sample estimates:
+      cor 
+0.9954948 
+</code></pre>
+<h3 id="2-result-interpretation">2. Result Interpretation</h3>
+<ul>
+<li><code>cor = 0.9954948</code> =&gt; Correlation coefficient (<code>r</code>) &gt; 0.99 ==&gt; Very high positive correlation</li>
+<li><code>p-value = 1.091e-14</code> &lt; <strong>0.05</strong> (commonly used significance level) =&gt; Statistically significant correlation</li>
+<li><code>95%CI = (0.9861, 0.9985)</code> =&gt; We are 95% confident that the true population correlation coefficient lies between 0.9861 and 0.9985. The <strong>grey region</strong> represents the confidence interval for the regression line.</li>
+</ul>
+<p><img alt="alt text" src="../reg_abline_ggplot2se.svg" /></p>
+<p>In <code>geom_smooth()</code>, set <code>se = TRUE</code> to display the confidence interval for the regression line.</p>
+<pre><code class="language-r">library(ggplot2)
+
+# Create the plot
+p &lt;- ggplot(women, aes(x = height, y = weight)) +
+  geom_point(color = &quot;blue&quot;, size = 1) +                    # blue points (pch = 16 equivalent)
+  geom_smooth(method = &quot;lm&quot;, color = &quot;red&quot;, se = TRUE, linewidth = 1) + # red regression line
+  labs(title = &quot;Height vs Weight for American Women&quot;,       # main title
+       x = &quot;Height (inches)&quot;,                               # x-axis label
+       y = &quot;Weight (pounds)&quot;) +                             # y-axis label
+  theme_minimal()
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js"></script>
+        <script src="../../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
