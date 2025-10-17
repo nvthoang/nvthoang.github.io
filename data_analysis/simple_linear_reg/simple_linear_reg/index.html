@@ -84,6 +84,9 @@
 </li>
                                 </ul>
                             </li>
+                            <li class="nav-item">
+                                <a href="../../../research_group/" class="nav-link">Research Group</a>
+                            </li>
                         </ul>
 
                     <ul class="nav navbar-nav ms-md-auto">
@@ -133,7 +136,7 @@
 
 <h1 id="simple-linear-regression">Simple Linear Regression</h1>
 <h2 id="purpose">Purpose</h2>
-<p>If you want to apply simple linear regression to analyze the relationship between two variables: a <code>predictor</code> variable (<code>x</code>) and a <code>response</code> variable (<code>y</code>), this post is for you.</p>
+<p>Simple linear regression is used to analyze the relationship between two variables: a <code>predictor</code> variable (<code>x</code>) and a <code>response</code> variable (<code>y</code>), this post is for you.</p>
 <h2 id="visualization">Visualization</h2>
 <h3 id="1-simple-visualization">1. Simple visualization</h3>
 <p>Visualize relationship between Women Height (<code>women$height</code>) and Women Weight (<code>women$weight</code>)</p>
@@ -172,7 +175,7 @@ p &lt;- ggplot(women, aes(x = height, y = weight)) +
 <p><img alt="alt text" src="../reg_abline_ggplot2.svg" /></p>
 <h2 id="hypothesis-testing">Hypothesis testing</h2>
 <h3 id="1-test-of-signficance">1. Test of signficance</h3>
-<p>use <code>cor.test()</code> function to test the signicance of hypothesis.</p>
+<p>Use <code>cor.test()</code> function to test the signicance of hypothesis.</p>
 <pre><code class="language-r">cor.test(women$height, women$weight)
 </code></pre>
 <p><strong>Note</strong>: Linear regression assumes a linear relationship between variables. We should verify both that the variables are correlated and that their relationship is indeed linear.</p>
@@ -188,9 +191,9 @@ sample estimates:
       cor 
 0.9954948 
 </code></pre>
-<h3 id="2-result-interpretation">2. Result Interpretation</h3>
+<h3 id="2-result-interpretation">2. Result interpretation</h3>
 <ul>
-<li><code>cor = 0.9954948</code> =&gt; Correlation coefficient (<code>r</code>) &gt; 0.99 ==&gt; Very high positive correlation</li>
+<li><code>cor = 0.9954948</code> =&gt; Correlation coefficient (<code>r</code>) &gt; 0.99 =&gt; Very high positive correlation</li>
 <li><code>p-value = 1.091e-14</code> &lt; <strong>0.05</strong> (commonly used significance level) =&gt; Statistically significant correlation</li>
 <li><code>95%CI = (0.9861, 0.9985)</code> =&gt; We are 95% confident that the true population correlation coefficient lies between 0.9861 and 0.9985. The <strong>grey region</strong> represents the confidence interval for the regression line.</li>
 </ul>
