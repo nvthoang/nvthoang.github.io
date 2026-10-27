@@ -146,7 +146,7 @@
       "url": "",
       "image": "",
       "published": true,
-      "orcid": ""
+      "orcid": "https://orcid.org/0009-0005-0610-7372"
     },
     {
       "name": "Thu Vu",
@@ -158,7 +158,7 @@
       "orcid": ""
     },
     {
-      "name": "Quynh Le",
+      "name": "Quynh Ho",
       "role": "Research Assistant",
       "bio": "B.Sc. in Biotechnology (In progress), International University, VNU HCMC, Vietnam.",
       "url": "",
@@ -266,7 +266,7 @@
   ],
   "join": [
     {
-      "title": "Students",
+      "title": "Student",
       "text": "If you are exploring a research topic, introduce your interests, relevant background and the question you would like to investigate. Supervision arrangements depend on the project and institutional requirements.",
       "topic": "Student research"
     },
