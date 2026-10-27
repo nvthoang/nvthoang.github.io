@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.nvthoang.com/sitemap.xml

@@ -1,0 +1,289 @@
+{
+  "name": "Hoang Nguyen",
+  "published_name": "Thanh-Hoang Nguyen-Vo",
+  "group": "Hoang Nguyen Research Group",
+  "site_url": "https://www.nvthoang.com",
+  "email": "hoang.nguyen@weltec.ac.nz",
+  "scholar": "https://scholar.google.com/citations?user=1GtEKUsAAAAJ&hl=en",
+  "orcid": "https://orcid.org/0000-0003-0006-5245",
+  "github": "https://github.com/nvthoang",
+  "location": "Wellington, New Zealand",
+  "office": "Office address to be added",
+  "form_endpoint": "https://formsubmit.co/hoang.nguyen@weltec.ac.nz",
+  "cv_file": "",
+  "description": "Hoang Nguyen leads an independent research group working across data science, deep learning, bioinformatics, health informatics and computer-aided drug design.",
+  "intro": "I work at the intersection of data science, artificial intelligence and the life sciences. My research connects computational methods with questions in biology, healthcare and drug discovery.",
+  "about": [
+    "My name is Hoang Nguyen. I am a lecturer and researcher based in Wellington, New Zealand. My work focuses on applying machine learning, deep learning, and artificial intelligence to the life, molecular, and health sciences.",
+    "I lead the Hoang Nguyen Research Group, where I serve as principal supervisor and project coordinator. The group brings together researchers and research assistants to address shared computational questions and turn methods and tools into research outcomes."
+  ],
+  "research": [
+    {
+      "id": "data-science",
+      "name": "Data Science",
+      "short": "From data to evidence.",
+      "description": "Predictive modelling, data curation and evaluation methods for applied research. We are interested in how data quality, study design and validation affect the conclusions a model can support.",
+      "topics": [
+        "Predictive modelling",
+        "Data quality",
+        "Model evaluation"
+      ],
+      "collaboration": "Research datasets, reproducible analysis and the evaluation of predictive models."
+    },
+    {
+      "id": "deep-learning",
+      "name": "Deep Learning",
+      "short": "Learning useful representations.",
+      "description": "Graph neural networks, transformers, multimodal learning and generative models. We study representations and learning strategies for complex scientific data.",
+      "topics": [
+        "Graph learning",
+        "Transformers",
+        "Multimodal learning"
+      ],
+      "collaboration": "Representation learning, complementary data sources and comparisons with strong baselines."
+    },
+    {
+      "id": "bioinformatics",
+      "name": "Bioinformatics",
+      "short": "Computational questions in biology.",
+      "description": "Computational analysis of biological sequences and molecular data, including peptide prediction and the identification of functional sequence features.",
+      "topics": [
+        "Biological sequences",
+        "Peptide prediction",
+        "Functional annotation"
+      ],
+      "collaboration": "Biological datasets, sequence-based prediction and computational questions supported by experimental context."
+    },
+    {
+      "id": "health-informatics",
+      "name": "Health Informatics",
+      "short": "Evidence for better health research.",
+      "description": "Data science and AI applied to health information and clinical questions. Our interests include medical prediction, human–computer interaction and the careful evaluation of technologies for healthcare.",
+      "topics": [
+        "Health data",
+        "Clinical prediction",
+        "AI and HCI"
+      ],
+      "collaboration": "Clinically grounded questions, external validation and evidence synthesis."
+    },
+    {
+      "id": "drug-design",
+      "name": "Computer-aided Drug Design",
+      "short": "Connecting molecules and models.",
+      "description": "Molecular property prediction, drug–target modelling and computational approaches to molecular design. Our published work also includes molecular data resources and curation software.",
+      "topics": [
+        "Molecular properties",
+        "Drug–target modelling",
+        "Molecular design"
+      ],
+      "collaboration": "Molecular datasets, computational screening and modelling linked to experimental follow-up."
+    }
+  ],
+  "featured_publications": [
+    "nguyen2026dual",
+    "pham2026mehc",
+    "vinh2025masked"
+  ],
+  "people": [
+    {
+      "name": "Quang H. Trinh",
+      "role": "Senior Researcher",
+      "bio": "B.Eng., Hanoi University of Science and Technology, Vietnam.",
+      "url": "",
+      "image": "",
+      "published": true,
+      "orcid": "https://orcid.org/0000-0001-9724-8405"
+    },
+    {
+      "name": "Loc K. Nguyen",
+      "role": "Senior Researcher",
+      "bio": "B.Sc. in Chemistry, International University, VNU HCMC, Vietnam.\nPh.D. in Data Science, Victoria University of Wellington, Wellington, New Zealand.",
+      "url": "",
+      "image": "",
+      "published": true,
+      "orcid": "https://orcid.org/0000-0003-0561-6659"
+    },
+    {
+      "name": "Phuc H. Le",
+      "role": "Senior Researcher",
+      "bio": "B.Sc. in Biotechnology, International University, VNU HCMC, Vietnam.\nPh.D. in Biophysics, RMIT University, Australia.",
+      "url": "",
+      "image": "",
+      "published": true,
+      "orcid": "https://orcid.org/0000-0003-2910-7509"
+    },
+    {
+      "name": "Trong-Chinh Pham",
+      "role": "Researcher",
+      "bio": "B.Sc. in Biotechnology, International University, VNU HCMC, Vietnam.",
+      "url": "",
+      "image": "",
+      "published": true,
+      "orcid": "https://orcid.org/0009-0003-6151-8567"
+    },
+    {
+      "name": "Nhat-Anh Nguyen-Dang",
+      "role": "Researcher",
+      "bio": "B.Sc. in Computer Science, Fulbright University Vietnam.\nPh.D. in Data Science (In progress), Victoria University of Wellington, Wellington, New Zealand.",
+      "url": "",
+      "image": "",
+      "published": true,
+      "orcid": "https://orcid.org/0009-0009-8262-9219"
+    },
+    {
+      "name": "Minh Quang Pham",
+      "role": "Researcher",
+      "bio": "M.Sc. in Computer Science (In progress), Ho Chi Minh City Open University, Vietnam.",
+      "url": "",
+      "image": "",
+      "published": true,
+      "orcid": ""
+    },
+    {
+      "name": "Huynh Trong Pham",
+      "role": "Researcher",
+      "bio": "Ph.D. in Computer Science (In progress), Ho Chi Minh City University of Technology (HUTECH), Ho Chi Minh City, Vietnam.",
+      "url": "",
+      "image": "",
+      "published": true,
+      "orcid": ""
+    },
+    {
+      "name": "Thu Vu",
+      "role": "Researcher",
+      "bio": "B.Sc. in Computer Science, International University, VNU HCMC, Vietnam.\nPh.D. (In progress), Victoria University of Wellington, Wellington, New Zealand.",
+      "url": "",
+      "image": "",
+      "published": true,
+      "orcid": ""
+    },
+    {
+      "name": "Quynh Le",
+      "role": "Research Assistant",
+      "bio": "B.Sc. in Biotechnology (In progress), International University, VNU HCMC, Vietnam.",
+      "url": "",
+      "image": "",
+      "published": true,
+      "orcid": ""
+    },
+    {
+      "name": "Huy Nguyen",
+      "role": "Research Assistant",
+      "bio": "B.Sc. in Biotechnology, International University, VNU HCMC, Vietnam.",
+      "url": "",
+      "image": "",
+      "published": true,
+      "orcid": ""
+    }
+  ],
+  "projects": [
+    {
+      "id": "project-one",
+      "title": "Project title to be added",
+      "area": "Data Science / Deep Learning",
+      "status": "Details forthcoming",
+      "description": "Project placeholder. A description of the research question, approach and intended outputs will be added here.",
+      "placeholder": true,
+      "published": true,
+      "url": ""
+    },
+    {
+      "id": "project-two",
+      "title": "Project title to be added",
+      "area": "Bioinformatics / Drug Design",
+      "status": "Details forthcoming",
+      "description": "Project placeholder. A short overview and links to any published outputs will be added here.",
+      "placeholder": true,
+      "published": true,
+      "url": ""
+    },
+    {
+      "id": "project-three",
+      "title": "Project title to be added",
+      "area": "Health Informatics",
+      "status": "Details forthcoming",
+      "description": "Project placeholder. The scope and opportunities for collaboration will be described here.",
+      "placeholder": true,
+      "published": true,
+      "url": ""
+    }
+  ],
+  "resources": [
+    {
+      "type": "Level 5",
+      "title": "Mathematics for IT",
+      "description": "Course description and teaching resources will be added here.",
+      "url": "",
+      "placeholder": true,
+      "published": true,
+      "level": 5
+    },
+    {
+      "type": "Level 5",
+      "title": "Business Data Analytics for IT",
+      "description": "Course description and teaching resources will be added here.",
+      "url": "",
+      "placeholder": true,
+      "published": true,
+      "level": 5
+    },
+    {
+      "type": "Level 6",
+      "title": "Data Analysis and Visualization",
+      "description": "Course description and teaching resources will be added here.",
+      "url": "",
+      "placeholder": true,
+      "published": true,
+      "level": 6
+    },
+    {
+      "type": "Level 6",
+      "title": "Data Mining Tools and Techniques",
+      "description": "Course description and teaching resources will be added here.",
+      "url": "",
+      "placeholder": true,
+      "published": true,
+      "level": 6
+    },
+    {
+      "type": "Level 6",
+      "title": "Mobile Application Development",
+      "description": "Course description and teaching resources will be added here.",
+      "url": "",
+      "placeholder": true,
+      "published": true,
+      "level": 6
+    },
+    {
+      "type": "Level 7",
+      "title": "Intelligent Systems Development",
+      "description": "Course description and teaching resources will be added here.",
+      "url": "",
+      "placeholder": true,
+      "published": true,
+      "level": 7
+    }
+  ],
+  "join": [
+    {
+      "title": "Students",
+      "text": "If you are exploring a research topic, introduce your interests, relevant background and the question you would like to investigate. Supervision arrangements depend on the project and institutional requirements.",
+      "topic": "Student research"
+    },
+    {
+      "title": "Researchers",
+      "text": "I welcome discussions about shared research questions, complementary methods, datasets and joint publications. A short description of the proposed collaboration is a useful starting point.",
+      "topic": "Research collaboration"
+    },
+    {
+      "title": "Collaborators",
+      "text": "Bring a concrete problem, the available data and the decision the research needs to inform. We can discuss whether the group's expertise is a good fit.",
+      "topic": "Collaboration enquiry"
+    }
+  ],
+  "education": [
+    "B.Sc. in Biotechnology, International University, VNU HCMC, Vietnam.",
+    "M.Sc. in Biotechnology, International University, VNU HCMC, Vietnam.",
+    "Ph.D. in Data Science, Victoria University of Wellington, Wellington, New Zealand."
+  ]
+}
