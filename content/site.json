@@ -1,5 +1,6 @@
 {
   "name": "Hoang Nguyen",
+  "lead_image": "assets/people/hoang-nguyen.webp",
   "published_name": "Thanh-Hoang Nguyen-Vo",
   "group": "Hoang Nguyen Research Group",
   "site_url": "https://www.nvthoang.com",
@@ -108,7 +109,7 @@
       "role": "Senior Researcher",
       "bio": "B.Sc. in Biotechnology, International University, VNU HCMC, Vietnam.\nPh.D. in Biophysics, RMIT University, Australia.",
       "url": "",
-      "image": "",
+      "image": "assets/people/phuc-h-le.webp",
       "published": true,
       "orcid": "https://orcid.org/0000-0003-2910-7509"
     },
@@ -126,7 +127,7 @@
       "role": "Researcher",
       "bio": "B.Sc. in Computer Science, Fulbright University Vietnam.\nPh.D. in Data Science (In progress), Victoria University of Wellington, Wellington, New Zealand.",
       "url": "",
-      "image": "",
+      "image": "assets/people/nhat-anh-nguyen-dang.webp",
       "published": true,
       "orcid": "https://orcid.org/0009-0009-8262-9219"
     },
@@ -135,7 +136,7 @@
       "role": "Researcher",
       "bio": "M.Sc. in Computer Science (In progress), Ho Chi Minh City Open University, Vietnam.",
       "url": "",
-      "image": "",
+      "image": "assets/people/minh-quang-pham.webp",
       "published": true,
       "orcid": "https://orcid.org/0009-0004-1794-2982"
     },

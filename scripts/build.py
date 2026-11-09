@@ -263,7 +263,14 @@ def build(output):
         members = [p for p in people if p['role']==role]
         cards = ''.join(f'''<article class="member-card">{f'<img src="{safe_url(p["image"])}" alt="{h(p["name"])}" width="112" height="112" loading="lazy">' if p.get('image') else '<div class="member-initials" aria-hidden="true">'+h(''.join(s[0] for s in p['name'].split()[:2]))+'</div>'}<h3 class="notranslate" translate="no">{h(p['name'])}{orcid_link(p.get('orcid'),p['name'])}</h3><p>{h(p['bio'])}</p>{link(p['url'],'Profile ↗','text-link',True) if p.get('url') else ''}</article>''' for p in members)
         member_sections += f'<section class="people-section"><h2>{plural}</h2><div class="people-grid">{cards}</div></section>' if members else f'<section class="people-section"><h2>{plural}</h2><p class="empty-inline">Profiles will be added here.</p></section>'
-    pages['people.html'] = ('People',page_intro('People','People','Meet the group lead, senior researchers, researchers and research assistants.')+f'''<section class="container section-bottom"><article class="lead-profile"><div class="lead-monogram notranslate" translate="no">HN</div><div><p class="eyebrow">Group lead</p><h2 class="notranslate" translate="no">Hoang Nguyen{orcid_link(c.get("orcid"),c["name"])}</h2><p class="lead-small">Principal Supervisor & Project Coordinator</p><p class="qualifications">{"<br>".join(h(item) for item in c["education"])}</p><div class="profile-links">{link('about.html','About Hoang ↗')}{link(c['scholar'],'Google Scholar ↗',external=True)}</div></div></article>{member_sections}</section>''')
+    lead_avatar = '<div class="lead-monogram notranslate" translate="no">HN</div>'
+    if c.get('lead_image'):
+        lead_avatar = (
+            '<div class="lead-monogram lead-portrait">'
+            f'<img src="{safe_url(c["lead_image"])}" alt="{h(c["name"])}" width="1024" height="1024">'
+            '</div>'
+        )
+    pages['people.html'] = ('People',page_intro('People','People','Meet the group lead, senior researchers, researchers and research assistants.')+f'''<section class="container section-bottom"><article class="lead-profile">{lead_avatar}<div><p class="eyebrow">Group lead</p><h2 class="notranslate" translate="no">Hoang Nguyen{orcid_link(c.get("orcid"),c["name"])}</h2><p class="lead-small">Principal Supervisor & Project Coordinator</p><p class="qualifications">{"<br>".join(h(item) for item in c["education"])}</p><div class="profile-links">{link('about.html','About Hoang ↗')}{link(c['scholar'],'Google Scholar ↗',external=True)}</div></div></article>{member_sections}</section>''')
 
     pages['news.html'] = ('News',page_intro('News','News','Published research, shared resources and updates from Hoang Nguyen Research Group.')+'<section class="container section-bottom"><div class="news-grid">'+''.join(news_card(n) for n in news)+'</div></section>')
     for n in news:

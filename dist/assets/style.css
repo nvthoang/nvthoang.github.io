@@ -41,3 +41,5 @@
 .lead-profile .qualifications{color:var(--muted)}
 
 .orcid-link{display:inline-flex;align-items:center;vertical-align:middle;margin-left:.25em;line-height:1;border-radius:50%}.orcid-link svg{display:block;width:22px;height:22px}.orcid-link:focus-visible{outline:2px solid var(--rust);outline-offset:4px}
+
+.lead-portrait>img{display:block;width:100%;height:auto}
