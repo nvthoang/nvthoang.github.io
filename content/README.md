@@ -18,10 +18,12 @@ JSON must use double quotes and have no trailing commas. Keep filenames and IDs 
 Seven member profiles supplied by the owner are included. Add further profiles using objects like:
 
 ```json
-{"name":"Full name", "role":"Researcher", "bio":"Short public biography.", "url":"https://example.org", "image":"assets/person.webp", "published":true}
+{"name":"Full name", "role":"Researcher", "bio":"Short public biography.", "url":"https://example.org", "image":"assets/people/full-name.webp", "published":true}
 ```
 
 Allowed roles: `Senior Researcher`, `Researcher`, `Research Assistant`. The group lead is rendered separately. Leave `image` or `url` empty if unused. Only use public, approved biographies and photos. Do not put unpublished research details in this public repository.
+
+**Member photo standard.** Use a square 1024 × 1024 px WebP with the face clearly visible. Save it in `assets/people/` with a lowercase, hyphenated filename and set the member’s `image` path in `site.json`. Photos and initials placeholders use the same 112 × 112 px display area.
 
 ## Projects
 
